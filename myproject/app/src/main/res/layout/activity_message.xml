@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context=".MessageActivity">>
+    <TextView
+            android:id="@+id/title_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+    />
+    <TextView
+            android:id="@+id/topic_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_topic"
+            android:text="Topic"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"
+
+    />
+    <Button
+            android:text="Add message"
+            android:id="@+id/btn_add_message"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/topic_contents"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="10sp"
+
+    />
+    <TextView
+            android:id="@+id/title_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_below="@+id/btn_add_message"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+    />
+    <ListView
+            android:id="@+id/listTopic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_message"
+    />
+</RelativeLayout>
